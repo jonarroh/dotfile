@@ -162,6 +162,8 @@ RUN git clone https://github.com/jonarroh/demo.git
 
 WORKDIR /demo
 
+RUN cat app.py
+
 RUN pip install -r /demo/requirements.txt
 
 CMD ["python", "app.py"]
